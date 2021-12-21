@@ -7,8 +7,8 @@ namespace CubeDomain
     {
         string Id { get; set; }
         int Size { get; set; }
-        IEnumerable<T> Coordinates { get; set; }
-        IEnumerable<T> CreateTheCoordinates(int size);
+        IList<T> Coordinates { get; set; }
+        IList<T> CreateTheCoordinates(int size);
 
     }
 }

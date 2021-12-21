@@ -19,16 +19,18 @@ namespace CubeApplication
                 //T foundCoordinate = Shape.Coordinates.FirstOrDefault(c=> c.X == newValueCoordinate.X && c.Y == newValueCoordinate.Y && c.Z == newValueCoordinate.Z);
                 //Shape.Coordinates.FirstOrDefault(c => c.X == newValueCoordinate.X && c.Y == newValueCoordinate.Y && c.Z == newValueCoordinate.Z).W = newValueCoordinate.W;
                 //foundCoordinate.W = newValueCoordinate.W;
-                bool validator = false;
+
+                int index = 0;
+
                 foreach(CubeCoordinates shapeCoordinate in shape.Coordinates)
                 {
                     if (shapeCoordinate.X != coordinate.X) continue;
                     if (shapeCoordinate.Y != coordinate.Y) continue;
                     if (shapeCoordinate.Z != coordinate.Z) continue;
-                    shapeCoordinate.W = coordinate.W;
-                    validator = true;
+                    index = shape.Coordinates.IndexOf(shapeCoordinate);
                 }
-                Console.WriteLine($"Did we find a value? {validator}");
+
+                shape.Coordinates[index].W = coordinate.W;
 
                 }
         }
