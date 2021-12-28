@@ -27,7 +27,7 @@ steps:
 - task: VSBuild@1
   displayName: 'Build'
   inputs:
-    solution: '**\*.sln'
+    solution: '**.sln'
     vsVersion: '17.0'
     clean: true
     configuration: release
