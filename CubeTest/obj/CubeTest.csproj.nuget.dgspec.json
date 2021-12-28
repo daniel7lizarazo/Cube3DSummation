@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OPITech\\Reto3DCube\\CubeTest\\CubeTest.csproj": {}
+    "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeTest\\CubeTest.csproj": {}
   },
   "projects": {
-    "C:\\OPITech\\Reto3DCube\\CubeApplication\\CubeApplication.csproj": {
+    "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeApplication\\CubeApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OPITech\\Reto3DCube\\CubeApplication\\CubeApplication.csproj",
+        "projectUniqueName": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeApplication\\CubeApplication.csproj",
         "projectName": "CubeApplication",
-        "projectPath": "C:\\OPITech\\Reto3DCube\\CubeApplication\\CubeApplication.csproj",
+        "projectPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeApplication\\CubeApplication.csproj",
         "packagesPath": "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\",
-        "outputPath": "C:\\OPITech\\Reto3DCube\\CubeApplication\\obj\\",
+        "outputPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DANIEL ANDRES\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj": {
-                "projectPath": "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj"
+              "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj": {
+                "projectPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj": {
+    "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj",
+        "projectUniqueName": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj",
         "projectName": "CubeDomain",
-        "projectPath": "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj",
+        "projectPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj",
         "packagesPath": "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\",
-        "outputPath": "C:\\OPITech\\Reto3DCube\\CubeDomain\\obj\\",
+        "outputPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DANIEL ANDRES\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,14 +116,14 @@
         }
       }
     },
-    "C:\\OPITech\\Reto3DCube\\CubeTest\\CubeTest.csproj": {
+    "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeTest\\CubeTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OPITech\\Reto3DCube\\CubeTest\\CubeTest.csproj",
+        "projectUniqueName": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeTest\\CubeTest.csproj",
         "projectName": "CubeTest",
-        "projectPath": "C:\\OPITech\\Reto3DCube\\CubeTest\\CubeTest.csproj",
+        "projectPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeTest\\CubeTest.csproj",
         "packagesPath": "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\",
-        "outputPath": "C:\\OPITech\\Reto3DCube\\CubeTest\\obj\\",
+        "outputPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DANIEL ANDRES\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -140,11 +140,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\OPITech\\Reto3DCube\\CubeApplication\\CubeApplication.csproj": {
-                "projectPath": "C:\\OPITech\\Reto3DCube\\CubeApplication\\CubeApplication.csproj"
+              "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeApplication\\CubeApplication.csproj": {
+                "projectPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeApplication\\CubeApplication.csproj"
               },
-              "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj": {
-                "projectPath": "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj"
+              "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj": {
+                "projectPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj"
               }
             }
           }

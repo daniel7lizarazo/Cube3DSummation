@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RlK4LAnDue4IghBjOrCvNX8/NiYOmVMo1XljdSFPv3bpwARKUHFGLXDd5oJ7ZbRwTP9TgGEDhNbyrXADJIm+LQ==",
+  "dgSpecHash": "DnMlQUk7T4yIeZTXsInyGq8B78zNoILa8C2UsoLhpgsh4NLjQAfWbfOnvJU1tvaEX3aeuSiWAuXkCInKmb4DGA==",
   "success": true,
-  "projectFilePath": "C:\\OPITech\\Reto3DCube\\CubeApi\\CubeApi.csproj",
+  "projectFilePath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeApi\\CubeApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
     "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",

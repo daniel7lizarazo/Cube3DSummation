@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj",
+      "projectUniqueName": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj",
       "projectName": "CubeDomain",
-      "projectPath": "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj",
+      "projectPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj",
       "packagesPath": "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\",
-      "outputPath": "C:\\OPITech\\Reto3DCube\\CubeDomain\\obj\\",
+      "outputPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DANIEL ANDRES\\AppData\\Roaming\\NuGet\\NuGet.Config",

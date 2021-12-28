@@ -10,3 +10,11 @@ C:\OPITech\Reto3DCube\CubeDomain\obj\Debug\net5.0\CubeDomain.csproj.CoreCompileI
 C:\OPITech\Reto3DCube\CubeDomain\obj\Debug\net5.0\CubeDomain.dll
 C:\OPITech\Reto3DCube\CubeDomain\obj\Debug\net5.0\ref\CubeDomain.dll
 C:\OPITech\Reto3DCube\CubeDomain\obj\Debug\net5.0\CubeDomain.pdb
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeDomain\obj\Debug\net5.0\CubeDomain.csproj.AssemblyReference.cache
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeDomain\obj\Debug\net5.0\CubeDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeDomain\obj\Debug\net5.0\CubeDomain.AssemblyInfoInputs.cache
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeDomain\obj\Debug\net5.0\CubeDomain.AssemblyInfo.cs
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeDomain\obj\Debug\net5.0\CubeDomain.csproj.CoreCompileInputs.cache
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeDomain\obj\Debug\net5.0\CubeDomain.dll
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeDomain\obj\Debug\net5.0\ref\CubeDomain.dll
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeDomain\obj\Debug\net5.0\CubeDomain.pdb

@@ -124,13 +124,5 @@ namespace CubeInfrastructure
             }
             return false;
         }
-        public async Task<T> FindByCoordinateAndShapeIdAsync(Expression<Func<T, bool>> predicate)
-        {
-
-        }
-        public T FindByCoordinateAndShapeId(Expression<Func<T, bool>> predicate)
-        {
-
-        }
     }
 }

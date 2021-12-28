@@ -1,0 +1,7 @@
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeApi\obj\Debug\net5.0\CubeApi.csproj.AssemblyReference.cache
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeApi\obj\Debug\net5.0\CubeApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeApi\obj\Debug\net5.0\CubeApi.AssemblyInfoInputs.cache
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeApi\obj\Debug\net5.0\CubeApi.AssemblyInfo.cs
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeApi\obj\Debug\net5.0\CubeApi.csproj.CoreCompileInputs.cache
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeApi\obj\Debug\net5.0\CubeApi.MvcApplicationPartsAssemblyInfo.cs
+C:\OPITech\PruebaPipelineSonar\PipelineSonar\CubeApi\obj\Debug\net5.0\CubeApi.MvcApplicationPartsAssemblyInfo.cache
