@@ -21,8 +21,7 @@ steps:
   inputs:
     command: 'restore'
     restoreSolution: '**/*.csproj'
-    feedsToUse: 'config'
-    nugetConfigPath: 'Perona.Api/Nuget.config'
+
  
 
 - task: VSBuild@1
