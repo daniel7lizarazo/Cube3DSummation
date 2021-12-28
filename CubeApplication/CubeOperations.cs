@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace CubeApplication
 {
-    public class CubeOperations<Tcoordinate, Tshape>:IOperations<Tcoordinate, Tshape>
-        where Tcoordinate : CubeCoordinates
-        where Tshape : TheCube<CubeCoordinates>
-    {
+    public class CubeOperations<Tcoordinate, Tshape, TId>:IOperations<Tcoordinate, Tshape>
+        where Tcoordinate : CubeCoordinates<TId>
+        where Tshape : TheCube<CubeCoordinates<TId>, TId>
+        where TId : IComparable, IComparable<TId>
+    { 
 
         public void UpdateACoordinateValue(Tshape shape, Tcoordinate coordinate)
         {
@@ -22,7 +23,7 @@ namespace CubeApplication
 
                 int index = 0;
 
-                foreach(CubeCoordinates shapeCoordinate in shape.Coordinates)
+                foreach(Tcoordinate shapeCoordinate in shape.Coordinates)
                 {
                     if (shapeCoordinate.X != coordinate.X) continue;
                     if (shapeCoordinate.Y != coordinate.Y) continue;

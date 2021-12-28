@@ -1,11 +1,13 @@
-﻿namespace CubeDomain
+﻿using System;
+
+namespace CubeDomain
 {
-    public interface ICoordinates
+    public interface ICoordinates<TId>: IEntity<TId>
+        where TId : IComparable, IComparable<TId>
     {
-        public string Id { get; set; } 
         public int X { get; set; }
         public int W { get; set; }
-        public ITheShapes<ICoordinates> Shape { get; set; }
+        public ITheShapes<ICoordinates<TId>, TId> Shape { get; set; }
         public string ShapeId { get; set; }
         
     }
