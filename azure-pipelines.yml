@@ -11,7 +11,7 @@ pool:
   vmImage: 'windows-latest'
  
 variables:
-  solution: 'Cube3D/Cube3D.sln'
+  solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
  
@@ -27,7 +27,7 @@ steps:
 - task: VSBuild@1
   displayName: 'Build'
   inputs:
-    solution: 'Cube3D/Cube3D.sln'
+    solution: '**/*.sln'
     vsVersion: '16.0'
     clean: true
     configuration: release
