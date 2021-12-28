@@ -15,7 +15,7 @@ namespace CubeTest
         public void TestTheCubeSize()
         {
             int size = 6;
-            TheCube<CubeCoordinates> myCube = new(size);
+            TheCube<CubeCoordinates<string>, string> myCube = new(size);
             Assert.AreEqual(6, myCube.Size);
         }
 
@@ -24,7 +24,7 @@ namespace CubeTest
         {
             var rand = new Random();
             int size = rand.Next(1, 20);
-            TheCube<CubeCoordinates> myCube = new(size);
+            TheCube<CubeCoordinates<string>, string> myCube = new(size);
             double expectedLength = Math.Pow(size, 3);
             Assert.AreEqual(expectedLength, myCube.Coordinates.Count());
 
@@ -35,7 +35,7 @@ namespace CubeTest
         {
             var rand = new Random();
             int size = rand.Next(1, 20);
-            TheCube<CubeCoordinates> myCube = new(size);
+            TheCube<CubeCoordinates<string>, string> myCube = new(size);
             bool validator = true;
             foreach (var coordinate in myCube.Coordinates)
             {
@@ -52,10 +52,10 @@ namespace CubeTest
         public void TheCubeUpdateCheckValue()
         {
             int size = 3;
-            TheCube<CubeCoordinates> myCube = new(size);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new ();
+            TheCube<CubeCoordinates<string>, string> myCube = new(size);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new ();
 
-            CubeCoordinates testCoordinates = new CubeCoordinates(1,2,3,5);
+            CubeCoordinates<string> testCoordinates = new CubeCoordinates<string>(1,2,3,5);
 
             theOperator.UpdateACoordinateValue(myCube, testCoordinates);
 
@@ -69,10 +69,10 @@ namespace CubeTest
         [TestMethod]
         public void TheCubeQueryNoUpdate()
         {
-            TheCube<CubeCoordinates> myCube = new(4);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
-            CubeCoordinates initialQueryCoordinate = new(1, 1, 1, 0);
-            CubeCoordinates finalQueryCoordinate = new(4, 4, 4, 0);
+            TheCube<CubeCoordinates<string>, string> myCube = new(4);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
+            CubeCoordinates<string> initialQueryCoordinate = new(1, 1, 1, 0);
+            CubeCoordinates<string> finalQueryCoordinate = new(4, 4, 4, 0);
 
             int queryResult = theOperator.QueryTheShape(myCube, initialQueryCoordinate, finalQueryCoordinate);
 
@@ -82,12 +82,12 @@ namespace CubeTest
         [TestMethod]
         public void TheCubeQueryWithUpdateCheckingIntoUpdateRange()
         {
-            TheCube<CubeCoordinates> myCube = new(4);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
+            TheCube<CubeCoordinates<string>, string> myCube = new(4);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
 
-            CubeCoordinates updateCoordinate = new(2, 2, 2, 5);
-            CubeCoordinates initialQueryCoordinate = new(1, 1, 1, 0);
-            CubeCoordinates finalQueryCoordinate = new(4, 4, 4, 0);
+            CubeCoordinates<string> updateCoordinate = new(2, 2, 2, 5);
+            CubeCoordinates<string> initialQueryCoordinate = new(1, 1, 1, 0);
+            CubeCoordinates<string> finalQueryCoordinate = new(4, 4, 4, 0);
 
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate);
             int queryResult = theOperator.QueryTheShape(myCube, initialQueryCoordinate, finalQueryCoordinate);
@@ -98,11 +98,11 @@ namespace CubeTest
         [TestMethod]
         public void TheCubeQueryWithUpdateCheckingIntoUpdateRangeDisorganizedCoordinates()
         {
-            TheCube<CubeCoordinates> myCube = new(4);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
-            CubeCoordinates updateCoordinate = new(2, 2, 2, 5);
-            CubeCoordinates initialQueryCoordinate = new(1, 1, 1, 0);
-            CubeCoordinates finalQueryCoordinate = new(4, 4, 4, 0);
+            TheCube<CubeCoordinates<string>, string> myCube = new(4);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
+            CubeCoordinates<string> updateCoordinate = new(2, 2, 2, 5);
+            CubeCoordinates<string> initialQueryCoordinate = new(1, 1, 1, 0);
+            CubeCoordinates<string> finalQueryCoordinate = new(4, 4, 4, 0);
 
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate);
             int queryResult = theOperator.QueryTheShape(myCube, finalQueryCoordinate, initialQueryCoordinate);
@@ -113,11 +113,11 @@ namespace CubeTest
         [TestMethod]
         public void TheCubeQueryWithUpdateCheckingOutsideUpdateRange()
         {
-            TheCube<CubeCoordinates> myCube = new(4);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
-            CubeCoordinates updateCoordinate = new(3, 3, 3, 5);
-            CubeCoordinates initialQueryCoordinate = new(1, 1, 1, 0);
-            CubeCoordinates finalQueryCoordinate = new(2, 2, 2, 0);
+            TheCube<CubeCoordinates<string>, string> myCube = new(4);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
+            CubeCoordinates<string> updateCoordinate = new(3, 3, 3, 5);
+            CubeCoordinates<string> initialQueryCoordinate = new(1, 1, 1, 0);
+            CubeCoordinates<string> finalQueryCoordinate = new(2, 2, 2, 0);
 
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate);
             int queryResult = theOperator.QueryTheShape(myCube, initialQueryCoordinate, finalQueryCoordinate);
@@ -128,11 +128,11 @@ namespace CubeTest
         [TestMethod]
         public void TheCubeQueryWithUpdateCheckingOutsideUpdateRangeDisorganizedCoordinates()
         {
-            TheCube<CubeCoordinates> myCube = new(4);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
-            CubeCoordinates updateCoordinate = new(3, 3, 3, 5);
-            CubeCoordinates initialQueryCoordinate = new(1, 1, 1, 0);
-            CubeCoordinates finalQueryCoordinate = new(2, 2, 2, 0);
+            TheCube<CubeCoordinates<string>, string> myCube = new(4);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
+            CubeCoordinates<string> updateCoordinate = new(3, 3, 3, 5);
+            CubeCoordinates<string> initialQueryCoordinate = new(1, 1, 1, 0);
+            CubeCoordinates<string> finalQueryCoordinate = new(2, 2, 2, 0);
 
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate);
             int queryResult = theOperator.QueryTheShape(myCube, finalQueryCoordinate, initialQueryCoordinate);
@@ -144,12 +144,12 @@ namespace CubeTest
         [TestMethod]
         public void ProposedExcerciseHackerRankTillQuery1()
         {
-            TheCube<CubeCoordinates> myCube = new(4);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
+            TheCube<CubeCoordinates<string>, string> myCube = new(4);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
 
-            CubeCoordinates updateCoordinate = new(2, 2, 2, 4);
-            CubeCoordinates initialQueryCoordinate = new(1, 1, 1, 0);
-            CubeCoordinates finalQueryCoordinate = new(3, 3, 3, 0);
+            CubeCoordinates<string> updateCoordinate = new(2, 2, 2, 4);
+            CubeCoordinates<string> initialQueryCoordinate = new(1, 1, 1, 0);
+            CubeCoordinates<string> finalQueryCoordinate = new(3, 3, 3, 0);
 
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate);
             int res = theOperator.QueryTheShape(myCube, initialQueryCoordinate, finalQueryCoordinate);
@@ -160,13 +160,13 @@ namespace CubeTest
         [TestMethod]
         public void ProposedExcerciseHackerRankTillQuery2()
         {
-            TheCube<CubeCoordinates> myCube = new(4);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
+            TheCube<CubeCoordinates<string>, string> myCube = new(4);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
 
-            CubeCoordinates updateCoordinate1 = new(2, 2, 2, 4);
-            CubeCoordinates updateCoordinate2 = new(1, 1, 1, 23);
-            CubeCoordinates initialQueryCoordinate = new(2, 2, 2, 0);
-            CubeCoordinates finalQueryCoordinate = new(4, 4, 4, 0);
+            CubeCoordinates<string> updateCoordinate1 = new(2, 2, 2, 4);
+            CubeCoordinates<string> updateCoordinate2 = new(1, 1, 1, 23);
+            CubeCoordinates<string> initialQueryCoordinate = new(2, 2, 2, 0);
+            CubeCoordinates<string> finalQueryCoordinate = new(4, 4, 4, 0);
 
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate1);
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate2);
@@ -178,13 +178,13 @@ namespace CubeTest
         [TestMethod]
         public void ProposedExcerciseHackerRankTillQuery3()
         {
-            TheCube<CubeCoordinates> myCube = new(4);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
+            TheCube<CubeCoordinates<string>, string> myCube = new(4);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
 
-            CubeCoordinates updateCoordinate1 = new(2, 2, 2, 4);
-            CubeCoordinates updateCoordinate2 = new(1, 1, 1, 23);
-            CubeCoordinates initialQueryCoordinate = new(1, 1, 1, 0);
-            CubeCoordinates finalQueryCoordinate = new(3, 3, 3, 0);
+            CubeCoordinates<string> updateCoordinate1 = new(2, 2, 2, 4);
+            CubeCoordinates<string> updateCoordinate2 = new(1, 1, 1, 23);
+            CubeCoordinates<string> initialQueryCoordinate = new(1, 1, 1, 0);
+            CubeCoordinates<string> finalQueryCoordinate = new(3, 3, 3, 0);
 
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate1);
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate2);
@@ -196,11 +196,11 @@ namespace CubeTest
         [TestMethod]
         public void ProposedExcerciseHackerRankTillQuery4()
         {
-            TheCube<CubeCoordinates> myCube = new(2);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
+            TheCube<CubeCoordinates<string>, string> myCube = new(2);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
 
-            CubeCoordinates updateCoordinate = new(2, 2, 2, 1);
-            CubeCoordinates initialQueryCoordinate = new(1, 1, 1, 0);
+            CubeCoordinates<string> updateCoordinate = new(2, 2, 2, 1);
+            CubeCoordinates<string> initialQueryCoordinate = new(1, 1, 1, 0);
 
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate);
             int res = theOperator.QueryTheShape(myCube, initialQueryCoordinate, initialQueryCoordinate);
@@ -211,12 +211,12 @@ namespace CubeTest
         [TestMethod]
         public void ProposedExcerciseHackerRankTillQuery5()
         {
-            TheCube<CubeCoordinates> myCube = new(2);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
+            TheCube<CubeCoordinates<string>, string> myCube = new(2);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
 
-            CubeCoordinates updateCoordinate = new(2, 2, 2, 1);
-            CubeCoordinates initialQueryCoordinate = new(1, 1, 1, 0);
-            CubeCoordinates finalQueryCoordinate = new(2, 2, 2, 0);
+            CubeCoordinates<string> updateCoordinate = new(2, 2, 2, 1);
+            CubeCoordinates<string> initialQueryCoordinate = new(1, 1, 1, 0);
+            CubeCoordinates<string> finalQueryCoordinate = new(2, 2, 2, 0);
 
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate);
             int res = theOperator.QueryTheShape(myCube, initialQueryCoordinate, finalQueryCoordinate);
@@ -228,11 +228,11 @@ namespace CubeTest
         [TestMethod]
         public void ProposedExcerciseHackerRankTillQuery6()
         {
-            TheCube<CubeCoordinates> myCube = new(2);
-            CubeOperations<CubeCoordinates, TheCube<CubeCoordinates>> theOperator = new();
+            TheCube<CubeCoordinates<string>, string> myCube = new(2);
+            CubeOperations<CubeCoordinates<string>, TheCube<CubeCoordinates<string>, string>, string> theOperator = new();
 
-            CubeCoordinates updateCoordinate = new(2, 2, 2, 1);
-            CubeCoordinates finalQueryCoordinate = new(2, 2, 2, 0);
+            CubeCoordinates<string> updateCoordinate = new(2, 2, 2, 1);
+            CubeCoordinates<string> finalQueryCoordinate = new(2, 2, 2, 0);
 
             theOperator.UpdateACoordinateValue(myCube, updateCoordinate);
             int res = theOperator.QueryTheShape(myCube, finalQueryCoordinate, finalQueryCoordinate);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BfOlB/xndmd3Z5McACUtvEtLgBnYsAPJhKVfmaItXEkovUC/dQHuwUyILbiVjURxjp4sPll5pmnyC01sMD6k6Q==",
+  "dgSpecHash": "q90vfPAhAwjxg74ZrhUj4hhgVoNDMIdHduheShCrL2w15I0BnOeUwUhfVjwtbIRuTCueYlg0HHH6xx+fQYnpgQ==",
   "success": true,
-  "projectFilePath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj",
+  "projectFilePath": "C:\\OPITech\\Reto3DCube\\CubeApplication\\CubeApplication.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

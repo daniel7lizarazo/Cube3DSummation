@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "CubeDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CubeDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CubeDomain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CubeDomain/1.0.0": {
+      "type": "project",
+      "path": "../CubeDomain/CubeDomain.csproj",
+      "msbuildProject": "../CubeDomain/CubeDomain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "CubeDomain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj",
-      "projectName": "CubeDomain",
-      "projectPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj",
+      "projectUniqueName": "C:\\OPITech\\Reto3DCube\\CubeApplication\\CubeApplication.csproj",
+      "projectName": "CubeApplication",
+      "projectPath": "C:\\OPITech\\Reto3DCube\\CubeApplication\\CubeApplication.csproj",
       "packagesPath": "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\",
-      "outputPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\obj\\",
+      "outputPath": "C:\\OPITech\\Reto3DCube\\CubeApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DANIEL ANDRES\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj": {
+              "projectPath": "C:\\OPITech\\Reto3DCube\\CubeDomain\\CubeDomain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

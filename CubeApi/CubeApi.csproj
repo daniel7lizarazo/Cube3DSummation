@@ -13,4 +13,8 @@
     <ProjectReference Include="..\CubeInfrastructure\CubeInfrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
