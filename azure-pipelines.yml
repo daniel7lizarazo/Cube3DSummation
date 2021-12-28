@@ -28,7 +28,7 @@ steps:
   displayName: 'Build'
   inputs:
     solution: 'Cube3D/Cube3D.sln'
-    vsVersion: '17.0'
+    vsVersion: '16.0'
     clean: true
     configuration: release
     msbuildArchitecture: 'x64'
