@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cube3D", "Cube3D.csproj", "{30E50824-6060-413B-85A4-8CAF874B8846}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CubeTest", "..\CubeTest\CubeTest.csproj", "{AC98A40D-56B6-4659-A5D3-BF80F4C69245}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CubeDomain", "..\CubeDomain\CubeDomain.csproj", "{302A9F9A-79D5-45C2-9D88-E0B5EA47B452}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CubeApplication", "..\CubeApplication\CubeApplication.csproj", "{27584E57-E78B-4793-8865-BF9DA45B0E6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeInfrastructure", "..\CubeInfrastructure\CubeInfrastructure.csproj", "{1F3C27BA-34CD-40DF-B40C-B31EEAC87C8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeApi", "..\CubeApi\CubeApi.csproj", "{FD75772E-3FAE-4C67-8780-9B59FF5A81B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30E50824-6060-413B-85A4-8CAF874B8846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E50824-6060-413B-85A4-8CAF874B8846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E50824-6060-413B-85A4-8CAF874B8846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E50824-6060-413B-85A4-8CAF874B8846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC98A40D-56B6-4659-A5D3-BF80F4C69245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC98A40D-56B6-4659-A5D3-BF80F4C69245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC98A40D-56B6-4659-A5D3-BF80F4C69245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC98A40D-56B6-4659-A5D3-BF80F4C69245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302A9F9A-79D5-45C2-9D88-E0B5EA47B452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302A9F9A-79D5-45C2-9D88-E0B5EA47B452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302A9F9A-79D5-45C2-9D88-E0B5EA47B452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302A9F9A-79D5-45C2-9D88-E0B5EA47B452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27584E57-E78B-4793-8865-BF9DA45B0E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27584E57-E78B-4793-8865-BF9DA45B0E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27584E57-E78B-4793-8865-BF9DA45B0E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27584E57-E78B-4793-8865-BF9DA45B0E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3C27BA-34CD-40DF-B40C-B31EEAC87C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3C27BA-34CD-40DF-B40C-B31EEAC87C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3C27BA-34CD-40DF-B40C-B31EEAC87C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3C27BA-34CD-40DF-B40C-B31EEAC87C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD75772E-3FAE-4C67-8780-9B59FF5A81B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD75772E-3FAE-4C67-8780-9B59FF5A81B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD75772E-3FAE-4C67-8780-9B59FF5A81B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD75772E-3FAE-4C67-8780-9B59FF5A81B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40AE3D26-CE28-4BA9-B10A-CA4A79332EEF}
+	EndGlobalSection
+EndGlobal
