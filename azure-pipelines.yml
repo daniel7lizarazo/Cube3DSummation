@@ -1,0 +1,46 @@
+# ASP.NET Core (.NET Framework)
+
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+ 
+trigger:
+- main
+ 
+pool:
+  vmImage: 'windows-latest'
+ 
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+ 
+steps:
+ 
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.csproj'
+    feedsToUse: 'config'
+    nugetConfigPath: 'Perona.Api/Nuget.config'
+ 
+
+- task: VSBuild@1
+  displayName: 'Build'
+  inputs:
+    solution: '**\*.sln'
+    vsVersion: '17.0'
+    clean: true
+    configuration: release
+    msbuildArchitecture: 'x64'
+
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'SonarCubeAnalize'
+    scannerMode: 'MSBuild'
+    projectKey: 'ClasesOpi_ClasesOpi'
+    projectName: 'PeronaSonarCubeAnalize'
+
+- task: SonarQubePublish@5
+  inputs:
+    pollingTimeoutSec: '300'
