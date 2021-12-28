@@ -1,0 +1,15 @@
+C:\OPITech\Reto3DCube\CubeInfrastructure\bin\Debug\net5.0\CubeInfrastructure.deps.json
+C:\OPITech\Reto3DCube\CubeInfrastructure\bin\Debug\net5.0\CubeInfrastructure.dll
+C:\OPITech\Reto3DCube\CubeInfrastructure\bin\Debug\net5.0\ref\CubeInfrastructure.dll
+C:\OPITech\Reto3DCube\CubeInfrastructure\bin\Debug\net5.0\CubeInfrastructure.pdb
+C:\OPITech\Reto3DCube\CubeInfrastructure\obj\Debug\net5.0\CubeInfrastructure.csproj.AssemblyReference.cache
+C:\OPITech\Reto3DCube\CubeInfrastructure\obj\Debug\net5.0\CubeInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\OPITech\Reto3DCube\CubeInfrastructure\obj\Debug\net5.0\CubeInfrastructure.AssemblyInfoInputs.cache
+C:\OPITech\Reto3DCube\CubeInfrastructure\obj\Debug\net5.0\CubeInfrastructure.AssemblyInfo.cs
+C:\OPITech\Reto3DCube\CubeInfrastructure\obj\Debug\net5.0\CubeInfrastructure.csproj.CoreCompileInputs.cache
+C:\OPITech\Reto3DCube\CubeInfrastructure\obj\Debug\net5.0\CubeInfrastructure.dll
+C:\OPITech\Reto3DCube\CubeInfrastructure\obj\Debug\net5.0\ref\CubeInfrastructure.dll
+C:\OPITech\Reto3DCube\CubeInfrastructure\obj\Debug\net5.0\CubeInfrastructure.pdb
+C:\OPITech\Reto3DCube\CubeInfrastructure\bin\Debug\net5.0\CubeDomain.dll
+C:\OPITech\Reto3DCube\CubeInfrastructure\bin\Debug\net5.0\CubeDomain.pdb
+C:\OPITech\Reto3DCube\CubeInfrastructure\obj\Debug\net5.0\CubeInfrastructure.csproj.CopyComplete
