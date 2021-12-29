@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yHoH7trHisnt+FWsmr8eaK1lDdiUWm00OY5SP6Ovq03V4nnrEcHFDM3ilugo55nCDBuuQveJdKCnbICB3ELNkw==",
+  "dgSpecHash": "kvrBd6xVwA1Ipy7O1OBWhNGhZGz3u5SKd2lsoKQN4G6xLod/PdZrNLzh9xkVrzpIcF0x1XjhCyplODcolp373g==",
   "success": true,
-  "projectFilePath": "C:\\OPITech\\Reto3DCube\\CubeTest\\CubeTest.csproj",
+  "projectFilePath": "C:\\Users\\DANIEL ANDRES\\Cube3DSummation\\CubeTest\\CubeTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

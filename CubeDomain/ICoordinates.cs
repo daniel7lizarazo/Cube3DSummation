@@ -8,7 +8,7 @@ namespace CubeDomain
         public int X { get; set; }
         public int W { get; set; }
         public ITheShapes<ICoordinates<TId>, TId> Shape { get; set; }
-        public string ShapeId { get; set; }
+        public TId ShapeId { get; set; }
         
     }
 }

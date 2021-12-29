@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj": {}
+    "C:\\Users\\DANIEL ANDRES\\Cube3DSummation\\CubeDomain\\CubeDomain.csproj": {}
   },
   "projects": {
-    "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj": {
+    "C:\\Users\\DANIEL ANDRES\\Cube3DSummation\\CubeDomain\\CubeDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj",
+        "projectUniqueName": "C:\\Users\\DANIEL ANDRES\\Cube3DSummation\\CubeDomain\\CubeDomain.csproj",
         "projectName": "CubeDomain",
-        "projectPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\CubeDomain.csproj",
+        "projectPath": "C:\\Users\\DANIEL ANDRES\\Cube3DSummation\\CubeDomain\\CubeDomain.csproj",
         "packagesPath": "C:\\Users\\DANIEL ANDRES\\.nuget\\packages\\",
-        "outputPath": "C:\\OPITech\\PruebaPipelineSonar\\PipelineSonar\\CubeDomain\\obj\\",
+        "outputPath": "C:\\Users\\DANIEL ANDRES\\Cube3DSummation\\CubeDomain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DANIEL ANDRES\\AppData\\Roaming\\NuGet\\NuGet.Config",
